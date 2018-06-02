@@ -25,14 +25,6 @@ def progress():
   key = request.args.get('key')
   value = redis_conn.get(key)
   return value if value else 'None'
-  # queued_task = q.enqueue(greet, name)
-  # key = str(queued_task.key).split(':')[-1].split('\'')[0]
-  # data = {
-  #   'name': name,
-  #   'key': key
-  # }
-  # print(queued_task.key)
-  # return 'key: ' + str(key)
 
 
 
